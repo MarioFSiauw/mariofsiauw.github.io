@@ -1,21 +1,25 @@
 /* Start of CSS */
 
+/* Change placeholder label name */
+
 #test {
   font-family: Roboto, sans-serif;
   font-weight: 900;
-  font-size: 56px;
-  margin: 80px 0px 0px 40px;
+  font-size: 40px;
+  margin: 160px 0px 0px 56px;
   padding: 8px 8px;
   text-align: left;
-  width: 60%;
+  width: 85%;
 }
+
+/* Change placeholder label name */
 
 #testy {
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  margin: 8px 0px 0px 40px;
+  font-size: 20px;
+  margin: 8px 0px 0px 56px;
   padding: 8px 8px;
   text-align: left;
-  width: 60%;
+  width: 85%;
 }
