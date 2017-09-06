@@ -1,12 +1,6 @@
 /* No more red meat */
 
 
-* {
-  border: 1px solid;
-  font-family: 'Roboto', sans-serif;
-  color: #101215;
-}
-
 
 /* Colors
 F5F7FA
@@ -15,8 +9,8 @@ CCD1D9
 AAB2BD
 656D78
 434A54
-434A54
 */
+
 
 html {
     height: 100%;
@@ -31,7 +25,7 @@ body {
 }
 
 .headline {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 40px;
   margin: 104px 56px 0px 56px;
   padding: 8px 8px;
@@ -40,7 +34,7 @@ body {
 /* Body */
 
 .body {
-  font-weight: 400;
+  font-weight: 350;
   font-size: 20px;
   margin: 16px 56px 0px 56px;
   padding: 8px 8px;
@@ -63,4 +57,35 @@ body {
   margin: 16px 56px 0px 56px;
   padding: 8px 8px;
   letter-spacing: .3px;
+}
+
+#social #container {
+  text-align: center;
+  align-items: center;
+}
+
+#social #container ul {
+  margin: 16px 56px 0px 40px;
+}
+
+#social #container li {
+  float: left;
+  padding-left: 24px;
+  list-style-type: none;
+}
+
+#social #container .fa {
+  padding-top: 48px;
+  font-size: 28px;
+  color: #AAB2BD;
+}
+
+#social #container .fa:hover {
+  color: #434A54;
+  transition: color 0.25s ease-in;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
 }
