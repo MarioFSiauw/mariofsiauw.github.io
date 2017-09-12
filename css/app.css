@@ -1,6 +1,10 @@
 /* No more red meat */
 
-
+/*
+* {
+  border: 1px solid;
+}
+*/
 
 /* Colors
 F5F7FA
@@ -9,15 +13,19 @@ CCD1D9
 AAB2BD
 656D78
 434A54
+1D2632
 */
-
 
 html {
     height: 100%;
 }
 
 body {
-    background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
+    background-image: -moz-linear-gradient(#FFFFFF 0%, #FBFCFF 100%); /* FF3.6+ */
+    background-image: -webkit-linear-gradient(#FFFFFF 0%, #FBFCFF 100%); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(#FFFFFF 0%, #FBFCFF 100%); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(#FFFFFF 0%, #FBFCFF 100%); /* IE10+ */
+    background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%); /* W3C */
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -25,10 +33,14 @@ body {
 }
 
 .headline {
+  display: -webkit-flex;
+  display: flex;
+  color: #1D2632;
   font-weight: 500;
-  font-size: 40px;
-  margin: 104px 56px 0px 56px;
-  padding: 8px 8px;
+  font-size: 26px;
+  max-width: 700px;
+  padding: 4px 8px;
+  margin: 104px 40px 0px 40px;
 }
 
 /* Body */
@@ -36,7 +48,7 @@ body {
 .body {
   font-weight: 350;
   font-size: 20px;
-  margin: 16px 56px 0px 56px;
+  margin: 24px 56px 0px 40px;
   padding: 8px 8px;
 }
 
@@ -48,13 +60,40 @@ body {
   font-size: 32px;
 }
 
+/* Projects */
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 24px;
+  margin-top: 8px;
+}
+
+.project-container-box {
+  width: 120px;
+  height: 120px;
+  background: rgba(255,255,255,1);
+  margin-left: 24px;
+  margin-top: 24px;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  /* box-shadow: 0 2px 4px rgba(0,0,0,.4); */
+  border-radius: 10px;
+}
+
+.project-container-box:hover {
+  box-shadow: 0 6px 24px rgba(29,38,50,.4);
+  border-radius: 30px;
+  -webkit-transition: 0.3s ease-out;
+}
+
 /* Footer */
 
 #copyright {
   font-size: 12px;
   font-weight: 800;
   color: #AAB2BD;
-  margin: 16px 56px 0px 56px;
+  margin: 16px 56px 0px 40px;
   padding: 8px 8px;
   letter-spacing: .3px;
 }
@@ -65,7 +104,7 @@ body {
 }
 
 #social #container ul {
-  margin: 16px 56px 0px 40px;
+  margin: 16px 56px 0px 24px;
 }
 
 #social #container li {
@@ -76,13 +115,24 @@ body {
 
 #social #container .fa {
   padding-top: 48px;
-  font-size: 28px;
+  font-size: 24px;
   color: #AAB2BD;
+  -webkit-transition: color 0.25s ease-in;
 }
 
-#social #container .fa:hover {
+#social #container .fa-twitter:hover {
+  color: #1DA1F2;
+  -webkit-transition: color 0.25s ease-in;
+}
+
+#social #container .fa-instagram:hover {
+  color: #8a3ab9;
+  -webkit-transition: color 0.25s ease-in;
+}
+
+#social #container .fa-envelope:hover {
   color: #434A54;
-  transition: color 0.25s ease-in;
+  -webkit-transition: color 0.25s ease-in;
 }
 
 footer {
