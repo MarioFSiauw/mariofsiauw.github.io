@@ -1,12 +1,7 @@
 /* No more red meat */
 
-/*
 
-* {
-  border: 1px solid;
-}
 
-*/
 
 /* Colors */
 
@@ -41,7 +36,10 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   font-weight: bold;
   font-size: 32px;
   max-width: 700px;
-  margin: 72px 40px 0px 40px;
+  width: 80%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 72px auto 0px auto;
   letter-spacing: .5px;
 }
 
@@ -52,7 +50,10 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   font-weight: 0;
   font-size: 18px;
   max-width: 700px;
-  margin: 32px 56px 0px 40px;
+  width: 80%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 32px auto 0px auto;
   letter-spacing: .25px;
 }
 
@@ -71,7 +72,10 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   font-weight: bold;
   font-size: 16px;
   max-width: 700px;
-  margin: 64px 56px -16px 40px;
+  width: 80%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 64px auto -16px auto;
   letter-spacing: 1px;
 }
 
@@ -80,15 +84,21 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   font-weight: 0;
   font-size: 18px;
   max-width: 700px;
-  margin-left: 40px;
+  width: 80%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 8px auto 0px auto;
   letter-spacing: .25px;
-  padding-top: 8px;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 40px;
+  max-width: 700px;
+  width: 85%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0px auto;
   list-style: none;
 }
 
@@ -117,7 +127,6 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   -moz-transition: .3s;
   border-radius: 10px;
   text-align: center;
-  vertical-align: center;
 }
 
 .project-logos {
@@ -156,26 +165,20 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 /* Footer */
 
 #social-tooltip{
-  display: inline
+  display: inline;
   font-size: 16px;
   font-weight: bold;
   color: #AAB2BD;
   letter-spacing: .3px;
 }
 
-.copyright {
-  font-size: 14px;
-  font-weight: bold;
-  color: #AAB2BD;
-  margin: 16px 56px 40px 40px;
-  letter-spacing: .3px;
-}
-
 .social-container {
   display: flex;
-  margin-top: 104px;
-  margin-left: 40px;
   max-width: 700px;
+  width: 85%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 104px auto 0px auto;
 }
 
 .social-container ul {
@@ -208,7 +211,15 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   -webkit-transition: color 0.25s ease-in;
 }
 
-footer {
+.copyright {
   display: flex;
-  flex-direction: column;
+  font-size: 14px;
+  font-weight: bold;
+  color: #AAB2BD;
+  max-width: 700px;
+  width: 80%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0px auto 56px auto;
+  letter-spacing: .3px;
 }
