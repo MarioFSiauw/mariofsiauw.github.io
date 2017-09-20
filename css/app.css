@@ -41,7 +41,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   font-weight: bold;
   font-size: 32px;
   max-width: 700px;
-  margin: 72px 40px 0px 48px;
+  margin: 72px 40px 0px 40px;
   letter-spacing: .5px;
 }
 
@@ -50,9 +50,9 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 .body {
   color: #1D2632;
   font-weight: 0;
-  font-size: 20px;
+  font-size: 18px;
   max-width: 700px;
-  margin: 32px 56px 0px 48px;
+  margin: 32px 56px 0px 40px;
   letter-spacing: .25px;
 }
 
@@ -67,12 +67,12 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 /* Projects */
 
 .tooltip {
-  color: #656D78;
-  font-weight: 0;
-  font-size: 18px;
+  color: #AAB2BD;
+  font-weight: bold;
+  font-size: 16px;
   max-width: 700px;
-  margin: 64px 56px -16px 48px;
-  letter-spacing: .25px;
+  margin: 64px 56px -16px 40px;
+  letter-spacing: 1px;
 }
 
 .jobtitle {
@@ -80,7 +80,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   font-weight: 0;
   font-size: 18px;
   max-width: 700px;
-  margin-left: 48px;
+  margin-left: 40px;
   letter-spacing: .25px;
   padding-top: 8px;
 }
@@ -88,13 +88,13 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 48px;
+  margin-left: 40px;
   list-style: none;
 }
 
 .projects-link {
   border-bottom: 2px solid #69AAE3;
-  -webkit-transition: .15s ease-in-out;
+  -webkit-transition: .15s;
 }
 
 .projects-link:hover {
@@ -155,22 +155,31 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 
 /* Footer */
 
+#social-tooltip{
+  display: inline
+  font-size: 16px;
+  font-weight: bold;
+  color: #AAB2BD;
+  letter-spacing: .3px;
+}
+
 .copyright {
   font-size: 14px;
-  font-weight: 800;
+  font-weight: bold;
   color: #AAB2BD;
-  margin: 16px 56px 40px 48px;
+  margin: 16px 56px 40px 40px;
   letter-spacing: .3px;
 }
 
 .social-container {
-  text-align: center;
-  align-items: center;
+  display: flex;
+  margin-top: 104px;
+  margin-left: 40px;
+  max-width: 700px;
 }
 
 .social-container ul {
   display: flex;
-  margin: 104px 0px 0px 48px;
   list-style-type: none;
 }
 
