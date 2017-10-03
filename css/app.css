@@ -83,13 +83,27 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   color: #F5F7FA;
   background-color: #1D2632;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   max-width: 700px;
   width: 80%;
   padding-left: 40px;
   padding-right: 40px;
   margin: 64px auto -16px auto;
   letter-spacing: 1px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.image-container img {
+  margin: 20px 64px;
+  max-width: 240px;
 }
 
 .jobtitle {
