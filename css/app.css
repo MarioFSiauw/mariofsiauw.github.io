@@ -17,8 +17,11 @@ AAB2BD
 
 /* Saturation
 
-69AAE3
+552738
+6b2b43
 2F5A8B
+2f318f
+5b2f94
 
 */
 
@@ -50,12 +53,12 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 .body {
   color: #1D2632;
   font-weight: 0;
-  font-size: 18px;
+  font-size: 22px;
   max-width: 700px;
   width: 80%;
   padding-left: 40px;
   padding-right: 40px;
-  margin: 32px auto 0px auto;
+  margin: 40px auto 0px auto;
   letter-spacing: .25px;
 }
 
@@ -72,7 +75,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 .subhead {
   color: #AAB2BD;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   max-width: 700px;
   width: 80%;
   padding-left: 40px;
@@ -83,14 +86,14 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 
 .tooltip {
   color: #F5F7FA;
-  background-color: #1D2632;
+  background-color: #2f318f;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 26px;
   max-width: 700px;
   width: 80%;
   padding-left: 40px;
   padding-right: 40px;
-  margin: 64px auto -16px auto;
+  margin: 64px auto 0px auto;
   letter-spacing: 1px;
 }
 
@@ -109,7 +112,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 }
 
 .jobtitle {
-  color: #2F5A8B;
+  color: #552738;
   font-weight: 0;
   font-size: 18px;
   max-width: 700px;
@@ -132,12 +135,12 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 }
 
 .projects-link {
-  border-bottom: 2px solid #69AAE3;
+  border-bottom: 2px solid #2f318f;
   -webkit-transition: .15s;
 }
 
 .projects-link:hover {
-  border-bottom: 6px solid #69AAE3;
+  border-bottom: 6px solid #2f318f;
 }
 
 #inprogresswrapper {
@@ -197,7 +200,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   display: inline;
   font-size: 16px;
   font-weight: bold;
-  color: #AAB2BD;
+  color: #5b2f94;
   letter-spacing: .3px;
 }
 
