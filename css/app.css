@@ -97,7 +97,19 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   letter-spacing: 1px;
 }
 
-.image-container {
+.image-container-single {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container-single img {
+  max-width: 70%;
+}
+
+.image-container-multiple {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -106,7 +118,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   margin-top: 40px;
 }
 
-.image-container img {
+.image-container-multiple img {
   margin: 20px 64px;
   max-width: 240px;
 }
