@@ -50,16 +50,27 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 
 /* Body */
 
+.intro {
+    color: #1D2632;
+    font-size: 22px;
+    max-width: 700px;
+    width: 80%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 40px auto 0px auto;
+    letter-spacing: 0px;
+}
+
 .body {
+  font-family: 'Open Sans', sans-serif;
   color: #1D2632;
-  font-weight: 0;
-  font-size: 22px;
+  font-size: 18px;
   max-width: 700px;
   width: 80%;
   padding-left: 40px;
   padding-right: 40px;
   margin: 40px auto 0px auto;
-  letter-spacing: .25px;
+  letter-spacing: 0px;
 }
 
 #emojisize {
@@ -73,7 +84,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 /* Projects */
 
 .subhead {
-  color: #AAB2BD;
+  color: #434A54;
   font-weight: bold;
   font-size: 18px;
   max-width: 700px;
