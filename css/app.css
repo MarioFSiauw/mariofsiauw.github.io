@@ -117,7 +117,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 }
 
 .image-container-single img {
-  max-width: 90%;
+  width: 90%;
 }
 
 .image-container-multiple {
