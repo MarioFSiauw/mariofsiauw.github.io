@@ -103,20 +103,35 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   width: 80%;
   padding-left: 40px;
   padding-right: 40px;
-  margin: 64px auto -40px auto;
+  margin: 64px auto -24px auto;
   letter-spacing: 1px;
+  line-height: 36px;
 }
 
-.image-container-single {
+figure {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.image-container-single img {
-  width: 80%;
+figure img {
+  display: block;
+    width: 60%;
+    min-width: 320px;
+    padding-bottom: 40px;
+}
+
+figcaption {
+    color: #1D2632;
+    position: absolute;
+    text-align: center;
+    margin-top: 16px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .image-container-multiple {
