@@ -44,7 +44,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   width: 80%;
   padding-left: 40px;
   padding-right: 40px;
-  margin: 72px auto 0px auto;
+  margin: 136px auto 0px auto;
   letter-spacing: .5px;
 }
 
@@ -108,25 +108,15 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   line-height: 36px;
 }
 
-figure {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
 figure img {
   display: block;
+  margin: auto;
     width: 60%;
     min-width: 320px;
-    padding-bottom: 40px;
 }
 
 figcaption {
     color: #1D2632;
-    position: absolute;
     text-align: center;
     margin-top: 16px;
     bottom: 0;
