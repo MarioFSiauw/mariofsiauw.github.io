@@ -243,8 +243,7 @@ figcaption {
 
 #social-tooltip {
   font-size: 16px;
-  color: #AAB2BD;
-  font-weight: bold;
+  color: #1D2632;
   letter-spacing: .3px;
 }
 
@@ -268,7 +267,7 @@ figcaption {
 
 .social-container .fa {
   font-size: 24px;
-  color: #AAB2BD;
+  color: #1D2632;
   -webkit-transition: color 0.25s ease-in;
 }
 
