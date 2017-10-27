@@ -29,7 +29,7 @@
 
     <section>
     <div>
-      <h2 class="tooltip">Brief <span style="font-size:20px;font-weight:normal;"><sup>(or Boxer)</sup></span></h2>
+      <h2 class="tooltip">Brief</h2>
       <p class="body">Collide was a livestreaming platform where influential creators could produce premium content for their audience.
         Creators could monetized their content through livestreams, video-on-demand, and the ability to exchange calls and texts with fans.</p>
         <p class="body">Since joining the team, we have transitioned towards a simpler product model where Creators can upload photos, pre-recorded videos, and call and text with fans.</p>
@@ -41,8 +41,8 @@
       </div>
       <div>
         <h2 class="tooltip">Identifying roadblocks early</h2>
-        <p class="body">The architecture was derived from an existing website. Our team started to realize there were many technical inefficiency
-          with the product's architecture, which made it difficult to implement certain features that were requested by the investors.</p>
+        <p class="body">The MVP was derived from an existing website. Our team started to realize the product's architecture had accrued significant tech debt,
+          which made it difficult to implement certain features that were requested by the investors.</p>
         <p class="body">Creators and users were recognized as two different entities. Meaning, Creator accounts could not use the functions
           of user accounts and vise-versa. This proved to cause major problems in our development process.</p>
         <figure>
@@ -50,15 +50,15 @@
           <figcaption>Initial userflow when Collide launched</figcaption>
         </figure>
         <p class="body">Other problems were also quite apparent at the early stages of the initial launch.
-          Retention rate were low, onboarding new fans were slow,revenue stream was lackluster,
-          <p class="body">Creators were not able to create accounts on their own. They were having difficulties creating and uploading new content. </p>
-          <p class="body">Fans weren't presented with easily-consumable content.
+          Retention rate were low, onboarding new fans were slow,revenue stream was lackluster, Creators were not able to create accounts on their own.
+          They were having difficulties creating and uploading new content. Fans weren't presented with easily-consumable content.</p>
       </div>
 
       <div>
-        <h2 class="tooltip">Big picture goals to meet</h2>
-        <p class="body">My team wanted to lay out the primary goals we wanted to achieve through this redesign. We set up two separate goals,
-          respectively for Creators and fans. We wanted to enhance a fan's experience by improving:</p>
+        <h2 class="tooltip">Setting up big picture goals</h2>
+        <p class="body">Before getting started on designing any screens, we wanted to lay out the primary goals we wanted to achieve through this redesign first.
+          It was important to conserve our resources and thoroughly discuss the problems and try to find the right way to execute the answers early on.</p>
+        <p class="body">We started off by deciding to set up two separate goals, respectively for Creators and fans. We wanted to enhance a fan's experience by improving:</p>
         <ul class="list">
           <li>Ease of consuming content</li>
           <li>Finding specific and/or brand new Creators</li>
@@ -71,66 +71,76 @@
           <li>Easily Sign Up and onboard an account</li>
           <li>Connecting with fans more effeciently</li>
         </ul>
+        <p class="body">We then started to explore how to curate user journeys. By referencing the MVP, we could easily determine which paths needed to be fixed.</p>
       </div>
 
       <div>
         <h2 class="tooltip">Early explorations</h2>
-        <p class="body"> Lorem Khaled Ipsum is a major key to success. Wraith talk. It’s on you how you want to live your life.
-          Everyone has a choice. I pick my choice, squeaky clean. Life is what you make it, so let’s make it. The key to more success is to have a lot of pillows.
-          We the best. Fan luv. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key.
-          A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm.</p>
+        <p class="body">I began going through the App and figuring out user flows, setting objectives on what to achieve as a user, finding out the red paths and other unnecessary steps users are taking.</p>
         <figure>
           <img src="./images/collide/whiteboard2.0.png" data-action="zoom">
-          <figcaption>Rough roadmap for a fan's experience with the product</figcaption>
         </figure>
+        <p class="body">Once we have figured out the optimal process to take, I started creating some wireframes to idealize Collides new style. I delivered several styles that I believed were an improvement,
+          both visually and experiences, until our team was ready to onboard with one.</p>
         <figure>
           <img src="./images/collide/initialexploration.png" data-action="zoom">
           <figcaption>Early wireframes ideas</figcaption>
         </figure>
-        <p class="body"> Lorem Khaled Ipsum is a major key to success. Wraith talk. It’s on you how you want to live your life.
-          Everyone has a choice. I pick my choice, squeaky clean. Life is what you make it, so let’s make it. The key to more success is to have a lot of pillows.
-          We the best. Fan luv. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. A major key, never panic.
-          Don’t panic, when it gets crazy and rough, don’t panic, stay calm.</p>
+        <p class="body">Based on the feedback that was given, I would try to iterate the designs on a weekly basis before we moved forward with the process.</p>
+        <p class="body">Once we have finalized the screens, I proceeded to work together with our developers in order to establish the product as closely to the vision as possible.
+        We decided on taking advantage of Zeplin in order to properly manage file handoff's with devs.</p>
       </div>
 
       <div>
-        <h2 class="tooltip">A New Home</h2>
-        <p class="body">We introduced a Home Feed that showcases featured content so users would have constant content to explore and consume. We also implemented caveats in the home page to encourage users to exlplore other Creators to increase behavior.</p>
+        <h2 class="tooltip">A new home</h2>
+        <p class="body">We introduced a Home Feed that showcases featured content so users would have ease of access to the content their Creators created. We also implemented caveats
+          in the home page to encourage users to exlplore other Creators to increase behavior.</p>
         <figure class="image-container-multiple">
           <img src="./images/collide/homescroll.gif" data-action="zoom">
         </figure>
-        <p class="body">As we released the product to the public, we started noticing users would only use the product when a specific Creator
-        they were following were online. The product was not initially built to market content, it was built to market Creators.</p>
+        <p class="body">The reason we believe the Home Feed is effective is because it drives engagement. I noticed users would previously only use the product when a specific Creator
+        they were following were online. The product was not initially built to market content, it was built to market Creators. By providing affordances to explore other Creators and content, Collide is able to drive a bigger engagement with their users.</p>
       </div>
-
       <div>
-        <h2 class="tooltip">Intuitive Creator Hub</h2>
-        <p class="body">Placeholder</p>
+        <h2 class="tooltip">Intuitive creator hub</h2>
+        <p class="body">We received feedback that Creators were having a hard time figuring out how to create content.
+          The marketing team would have to personally explain to them how to navigate through the Creator functions.</p>
+          <p class="body">By implementing a static "create" button Creators can easily upload videos, images, make calls and texts anytime.
         <figure class="image-container-multiple">
           <img src="./images/collide/creatorhub.gif" data-action="zoom">
         </figure>
       </div>
 
       <div>
-        <h2 class="tooltip">Introducing Reveal</h2>
-        <p class="body">Showcase new feature: Reveal, here</p>
+        <h2 class="tooltip">Introducing reveal</h2>
+        <p class="body">Reveal is a completely new feature that's included in the redesign. It's primary function is for Creators to provide super-exclusive content to their fans.
+        We wanted to enhance the community between Creators and their fans.</p>
         <figure class="image-container-multiple">
           <img src="./images/collide/revealuser.gif" data-action="zoom">
         </figure>
       </div>
-
+    <!--    Screens will be uploaded shortly
       <div>
         <h2 class="tooltip">Seeing Increased Behavior</h2>
         <p class="body">Showcase improved analytics here</p>
       </div>
 
       <div>
+        <h2 class="tooltip">To conclude all of this</h2>
+      </div>
+-->
+      <div>
         <h2 class="tooltip">FFP: Future Feature Plans</h2>
-        <p class="body">Showcase features that were designed, but yet implemented here</p>
+        <p class="body">There are still a few new things we have planned to get shipped in the near future, updates to the Explore page and user sign up/log ins.
+      These features will hopefully project a higher conversion rate with new downloads and further improve engagement with the users.</p>
+      <p class="body">Improvements are also being made throughout the whole product on a daily basis.</p>
       </div>
 
     </section>
     <script src="js/zoom-vanilla.js"></script>
   </body>
 <footer>
+  <div>
+
+    <div>
 </footer>
