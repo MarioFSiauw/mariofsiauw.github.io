@@ -39,7 +39,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 .headline {
   color: #1D2632;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   max-width: 800px;
   width: 80%;
   padding-left: 40px;
@@ -55,7 +55,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 
 .intro {
     color: #1D2632;
-    font-size: 24px;
+    font-size: 20px;
     max-width: 800px;
     font-weight: 300;
     width: 80%;
@@ -67,7 +67,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 
 .body {
   color: #1D2632;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   max-width: 800px;
   width: 80%;
@@ -90,7 +90,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 .subhead {
   color: #434A54;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 16px;
   max-width: 800px;
   width: 80%;
   padding-left: 40px;
@@ -116,7 +116,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   color: #1D2632;
   font-weight: bold;
   list-style-type: disc;
-  font-size: 24px;
+  font-size: 20px;
   max-width: 800px;
   width: 80%;
   padding-left: 40px;
@@ -157,7 +157,7 @@ figcaption {
 }
 
 .jobtitle {
-  font-size: 18px;
+  font-size: 14px;
   max-width: 800px;
   width: 80%;
   padding-left: 40px;
@@ -252,7 +252,7 @@ figcaption {
 }
 
 .project-title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #656D78;
   margin-top: 8px;
@@ -272,7 +272,7 @@ figcaption {
 /* Footer */
 
 #social-tooltip {
-  font-size: 16px;
+  font-size: 14px;
   color: #434A54;
   letter-spacing: .3px;
 }
@@ -296,7 +296,7 @@ figcaption {
 }
 
 .social-container .fa {
-  font-size: 24px;
+  font-size: 20px;
   color: #434A54;
   -webkit-transition: color 0.25s ease-in;
 }
@@ -313,7 +313,7 @@ figcaption {
 
 .copyright {
   display: flex;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   color: #AAB2BD;
   max-width: 800px;
