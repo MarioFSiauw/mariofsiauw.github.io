@@ -40,10 +40,6 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   color: #1D2632;
   font-weight: 600;
   font-size: 28px;
-  max-width: 800px;
-  width: 80%;
-  padding-left: 40px;
-  padding-right: 40px;
   margin: 60px auto 0px auto;
   letter-spacing: .5px;
 }
@@ -53,26 +49,10 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   -webkit-transition: 0.2s ease-out;
 }
 
-.intro {
-    color: #1D2632;
-    font-size: 20px;
-    max-width: 800px;
-    font-weight: 300;
-    width: 80%;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 40px auto 0px auto;
-    letter-spacing: 1px;
-}
-
 .body {
   color: #1D2632;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
-  max-width: 800px;
-  width: 80%;
-  padding-left: 40px;
-  padding-right: 40px;
   margin: 24px auto 24px auto;
   letter-spacing: 1px;
 }
@@ -127,10 +107,6 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   color: #434A54;
   font-weight: normal;
   font-size: 16px;
-  max-width: 800px;
-  width: 80%;
-  padding-left: 40px;
-  padding-right: 40px;
   margin: 64px auto -16px auto;
   letter-spacing: 1px;
 }
@@ -139,11 +115,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   color: #1D2632;
   font-weight: 700;
   font-size: 34px;
-  max-width: 800px;
-  width: 80%;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin: 64px auto 16px auto;
+  margin: 64px auto -8px auto;
   letter-spacing: 1px;
   line-height: 32px;
 }
@@ -153,10 +125,6 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   font-weight: bold;
   list-style-type: disc;
   font-size: 20px;
-  max-width: 800px;
-  width: 80%;
-  padding-left: 40px;
-  padding-right: 40px;
   margin: 40px auto 40px auto;
 }
 
@@ -193,11 +161,7 @@ figcaption {
 }
 
 .jobtitle {
-  font-size: 14px;
-  max-width: 800px;
-  width: 80%;
-  padding-left: 40px;
-  padding-right: 40px;
+  font-size: 18px;
   margin: 8px auto 0px auto;
   letter-spacing: .25px;
 }
@@ -205,10 +169,6 @@ figcaption {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
-  width: 80%;
-  padding-left: 40px;
-  padding-right: 40px;
   margin:auto;
   list-style: none;
 }
@@ -279,10 +239,6 @@ figcaption {
 
 .social-container {
   display: flex;
-  max-width: 800px;
-  width: 80%;
-  padding-left: 40px;
-  padding-right: 40px;
   margin: 104px auto 0px auto;
 }
 
@@ -316,17 +272,13 @@ figcaption {
   font-size: 12px;
   font-weight: bold;
   color: #AAB2BD;
-  max-width: 800px;
-  width: 80%;
-  padding-left: 40px;
-  padding-right: 40px;
   margin: 0px auto 56px auto;
   letter-spacing: .3px;
 }
 
 .simplebottomnavi {
   text-align: center;
-  margin: 120px 0px;
+  margin: 64px 0px;
 }
 
 .simplebottomnavi button {
