@@ -39,7 +39,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 .headline {
   color: #1D2632;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 32px;
   margin: 60px auto 0px auto;
   letter-spacing: .5px;
 }
@@ -114,7 +114,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 .tooltip {
   color: #1D2632;
   font-weight: 700;
-  font-size: 34px;
+  font-size: 28px;
   margin: 64px auto -8px auto;
   letter-spacing: 1px;
   line-height: 32px;
@@ -131,18 +131,18 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 figure img {
   display: block;
   margin: auto;
-    width: 60%;
-    min-width: 320px;
+    width: 100%;
+    min-width: 300px;
 }
 
 figcaption {
-    color: #1D2632;
-    text-align: center;
-    margin-top: 16px;
-    margin-bottom: 48px;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  color: #1D2632;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 48px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
 }
 
