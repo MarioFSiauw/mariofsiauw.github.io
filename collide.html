@@ -10,6 +10,7 @@
     <link href="./css/skeleton.css" type="text/css" rel="stylesheet">
     <link href="./css/normalize.css" type="text/css" rel="stylesheet">
     <link href="./css/app.css" type="text/css" rel="stylesheet">
+    <link href="./css/west.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
@@ -18,6 +19,19 @@
   <body style="background-image">
 
   <div class="container">
+    <div style="height:24px;">
+    </div>
+    <aside class="west">
+    <div class="west__trigger"></div>
+    <nav class="west__menu">
+        <ul class="west__wrapper">
+            <li class="west__list"><a href="index.html" class="west__link">Home</a></li>
+            <li class="west__list"><a href="index.html" class="west__link">About</a></li>
+            <li class="west__list"><a href="index.html" class="west__link">Resume</a></li>
+        </ul>
+    </nav>
+</aside>
+
     <div>
       <h1 class="headline">
         <a id="collideapplink" href="https://itunes.apple.com/us/app/collide-connect-interact-live-with-creators/id1087405455?mt=8" target="_blank" rel="noreferrer nooponer">Collide</a>
@@ -149,6 +163,7 @@
     <button onclick="topFunction()">Top</button>
   </div>
 </footer>
+<script src="js/west.js"></script>
 <script src="js/zoom-vanilla.js"></script>
 <script src="js/app.js"></script>
 </body>
