@@ -9,6 +9,7 @@
     <link href="./css/skeleton.css" type="text/css" rel="stylesheet">
     <link href="./css/normalize.css" type="text/css" rel="stylesheet">
     <link href="./css/app.css" type="text/css" rel="stylesheet">
+    <link href="./css/west.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
@@ -17,6 +18,19 @@
   <body>
 
   <div class="container">
+    <div style="height:24px;">
+    </div>
+    <aside class="west">
+    <div class="west__trigger"></div>
+    <nav class="west__menu">
+        <ul class="west__wrapper">
+            <li class="west__list"><a href="index.html" class="west__link">Home</a></li>
+            <li class="west__list"><a href="index.html" class="west__link">About</a></li>
+            <li class="west__list"><a href="index.html" class="west__link">Resume</a></li>
+        </ul>
+    </nav>
+</aside>
+
     <div>
       <h1 class="headline" style="font-weight:400;">Hi there, I'm <span style="font-weight:bold;"><a class="fancylinks" href="index.html">Mario Siauw</a></span>.</h1>
     </div>
@@ -58,6 +72,7 @@
       <footer>
         <p class="copyright">&#169; 2017 Mario Siauw</p>
       </footer>
+      <script src="js/west.js"></script>
     </div>
   </div>
   </body>
