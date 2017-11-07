@@ -23,7 +23,7 @@ img.zoom-img {
   filter: "alpha(opacity=0)";
   opacity: 0;
   -webkit-transition: opacity 300ms;
-  transition:      opacity 300ms;
+  transition:  opacity 300ms;
 }
 .zoom-overlay-open .zoom-overlay {
   filter: "alpha(opacity=100)";
