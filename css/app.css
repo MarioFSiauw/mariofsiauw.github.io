@@ -129,10 +129,9 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 }
 
 figure img {
-  display: block;
+  display: flex;
   margin: auto;
     width: 100%;
-    min-width: 300px;
 }
 
 figcaption {
