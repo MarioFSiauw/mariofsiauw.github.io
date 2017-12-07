@@ -35,6 +35,20 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 
 */
 
+.nav{
+    list-style:none;
+    margin-top:40px;
+    text-align:left;
+}
+.nav li{
+    display:inline;
+    margin-right:24px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav a{
+    display:inline-block;
+}
 
 .headline {
   color: #1D2632;
@@ -51,7 +65,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
 
 .body {
   color: #1D2632;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   margin: 24px auto 24px auto;
   letter-spacing: 1px;
