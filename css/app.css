@@ -197,15 +197,15 @@ figcaption {
 }
 
 .project-container {
-  width: 120px;
-  height: 120px;
+  width: 320px;
+  height: 240px;
   background: rgba(255,255,255,1);
   box-shadow: 0 2px 4px rgba(29,38,50,.4);
   margin-top: 48px;
   margin-right: 24px;
   -webkit-transition: .3s;
   -moz-transition: .3s;
-  border-radius: 10px;
+  border-radius: 6px;
   text-align: center;
 }
 
