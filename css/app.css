@@ -44,7 +44,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
     display:inline;
     margin-right:24px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 100;
 }
 .nav a{
     display:inline-block;
@@ -70,6 +70,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   margin: 24px auto 24px auto;
   letter-spacing: 1px;
 }
+
 
 #emojisize {
   font-size: 14px;
@@ -142,22 +143,13 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   margin: 40px auto 40px auto;
 }
 
-figure img {
+
+.single-image {
   display: flex;
   margin: auto;
-    width: 100%;
+  width: 100%;
 }
 
-figcaption {
-  color: #1D2632;
-  text-align: center;
-  margin-top: 16px;
-  margin-bottom: 48px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-}
 
 .image-container-multiple {
   display: flex;
