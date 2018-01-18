@@ -54,7 +54,7 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   color: #1D2632;
   font-weight: 600;
   font-size: 36px;
-  margin: 60px auto 0px auto;
+  margin: 56px auto 0px auto;
   letter-spacing: .5px;
 }
 
@@ -71,6 +71,10 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   letter-spacing: 1px;
 }
 
+.divider {
+  border-top: 1px solid #CCD1D9;
+  margin: 64px auto 0px auto;
+}
 
 #emojisize {
   font-size: 14px;
@@ -131,6 +135,15 @@ background-image: linear-gradient(#FFFFFF 0%, #FBFCFF 100%);
   font-weight: 700;
   font-size: 28px;
   margin: 64px auto -8px auto;
+  letter-spacing: 1px;
+  line-height: 32px;
+}
+
+.tooltipheader {
+  color: #1D2632;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 32px auto -16px 32px;
   letter-spacing: 1px;
   line-height: 32px;
 }
