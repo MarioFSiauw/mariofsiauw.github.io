@@ -3,10 +3,11 @@
   
 		<head>
 			<meta charset="UTF-8">
-      <title>Mario Siauw's Portfolio</title>
+      <title>{{ page.title }}</title>
       <meta name="description" content="Mario Siauw is passionate about building products that focuses on usability">
       <meta name="keywords" content="product design, portfolio, web design, ux design, ui design">
       <meta name="author" content="Mario Siauw">
+      <!-- link to main stylesheet -->
       <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
 		</head>
     
@@ -21,9 +22,11 @@
 			
 			{{ content }}
 			
-			</div><!-- /.container -->
+      </div>
+      
+      <!-- /.container -->
+      
       <footer>
-        <p class="copyright">&#169; 2017 Mario Siauw</p>
       </footer>
 		</body>
 	</html>
