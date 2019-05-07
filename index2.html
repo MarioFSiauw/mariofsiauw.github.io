@@ -3,48 +3,48 @@ layout: default
 title: Mario Siauw's Portfolio
 ---
 
-<article class="sans-serif cf pa4 ph4 mw8 center dark-gray">
+<main>
+<section class="sans-serif cf pa4 ph4 mw8 center dark-gray">
 
   <header class="fl w-100 mw8-ns pa4-m pa4-l mb3 mb0-ns">
-    <h1 class="fw5 f3 fl w-100 mt0 mb3"> Mario Siauw</h1>
-    <h1 class="fw6 f2 f1-ns lh-title">Designing products that focuses on usability.</h1>
-    <h1 class="fw2 f4 silver">Currently designing for <a href="#" class="link fw4 dim dark-blue">Collide</a></h1>
+    <h1 class="fw4 f4 fl w-100 mt0 mb3"> Mario Siauw</h1>
+    <h1 class="fw6 f3 f2-ns lh-title">Designing products that focuses on usability</h1>
+    <h1 class="fw3 f5 silver">Currently designing for <a href="#" class="link underline fw4 dim dark-blue">Collide</a></h1>
   </header>
-  
-  <!-- Collide Case Studies -->
 
-  <!-- Project -->
+  <div class="fl w-100">
 
-  <section class="fl w-100">
+    <!-- Projects 1 -->
+
     <div class="fl w-100 w-50-ns pv3 pa4-m pa4-l">
       <div class="aspect-ratio aspect-ratio--4x3">
-          <a href="collide1.html" style="background-image:url(/images/collide/collidegradient.png);" class="link dt cover hide-child br3 bg-center aspect-ratio--object" title="Collide">
+          <a href="collide1.html" style="background-image:url(/images/collide/collidegradient.png);" class="link dt cover hide-child br3 bg-center aspect-ratio--object" title="Creator Onboarding Case Study">
               <span class="white f3 dtc br3 v-mid tc w-100 h-100 child bg-black-90">View Case Study</span>
           </a>
       </div>
       <div>
-        <h3 class="f3 fw5 f4-ns mb0 black">Collide - Creator Onboarding</h3>
+        <h3 class="f3 fw5 f4-ns mb0 black">Creator Onboarding</h3>
         <h3 class="f5 fw4 mt3 mb4 black-60 lh-copy measure">Increase the rate of successful creator sign ups</h3>
-        <a href="collide1.html" class="link dim dark-blue">View Case Study</a>
+        <a href="collide1.html" class="link dim dark-blue" title="Creator Onboarding Case Study">View Case Study</a>
       </div>
     </div>
 
-    <!-- Project -->
+    <!-- Project 2 -->
 
     <div class="fl w-100 w-50-ns pv3 pa4-m pa4-l">
       <div class="aspect-ratio aspect-ratio--4x3">
-          <a href="collide2.html" style="background-image:url(/images/collide/collidegradient.png);" class="link dt cover hide-child br3 bg-center aspect-ratio--object" title="Collide">
+          <a href="collide2.html" style="background-image:url(/images/collide/collidegradient.png);" class="link dt cover hide-child br3 bg-center aspect-ratio--object" title="Notifications Case Study">
             <span class="white f3 dtc br3 v-mid tc w-100 h-100 child bg-black-90">View Case Study</span>
         </a>
       </div>
       <div>
         <h3 class="f3 fw5 f4-ns mb0 black">Collide - Notifications</h3>
         <h3 class="f5 fw4 mt3 mb4 black-60 lh-copy measure">Serve users notifications that are actionable and/or informative</h3>
-        <a href="collide2.html" class="link dim dark-blue">View Case Study</a>
+        <a href="collide2.html" class="link dim dark-blue" title="Notifications Case Study">View Case Study</a>
       </div>
     </div>
 
-    <!-- Project  -->
+    <!-- Project 3 -->
 
     <div class="fl w-100 w-50-ns pv3 pa4-m pa4-l">
       <div class="aspect-ratio aspect-ratio--4x3">
@@ -59,7 +59,7 @@ title: Mario Siauw's Portfolio
       </div>
     </div>
 
-    <!-- Project  -->
+    <!-- Project 4 -->
 
     <div class="fl w-100 w-50-ns pv3 pa4-m pa4-l">
       <div class="aspect-ratio aspect-ratio--4x3">
@@ -73,11 +73,11 @@ title: Mario Siauw's Portfolio
         <a href="#" class="link dim dark-blue">View Case Study</a>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- Miscellanious Case Studies -->
 
-  <section class="fl w-100">
+  <div class="fl w-100">
       <div class="pa4-m pa4-l mb1 mt5">
           <h2 class="sans-serif fw4 f4 black-30 fl w-100 mt0 mb1 pt3">Side Projects</h2>
       </div>
@@ -95,14 +95,8 @@ title: Mario Siauw's Portfolio
           </a>
         </div>
       </div>
-    </section>
-  
+    </div>
 
-</article>
+{% include footer.html %}
 
-<footer class="sans-serif pv4 ph3 ph5-m ph6-l gray">
-  <small class="f6 db tl">Site built with Tachyons and Jekyll</small>
-</footer>
-
-</body>
-</html>
+  </main>
