@@ -1,112 +1,166 @@
 ---
 layout: default
-title: Mario Siauw's Portfolio
+title: Notifications - Case Study
 ---
 
-<main>
-  <article class="dark-gray">
-    <div class="sans-serif ph4 ph5-ns center mw8 w-100">
-      <div class="f3 center mv4 mv5-ns">
-        <h1 class="fw6 f1 fl w-100 mt0 mb3">Collide Project #2</h1>
-        <h2 class="f3 lh-title">
-            Lorem Ipsum
-          </h2>
-          <time class="f6 ttu tracked gray">Case Study</time>
-      </div>
-      
-      <img src="./images/parker/header.png" class="db w-100"/>
-      <div class="measure f3 center mv5">
-        <h1 class="fw6 f3 red">Problem statement</h1>
-        <p class="lh-copy measure f4 f3-ns">
-          The idea of Parker came to fruition when I found myself throwing away a ridiculous amount
-          of parking garage tickets that I had stashed in my car's cupholder. Not only did I realize that I spend too much money on parking, but also the fact that so much paper is wasted with this mechanism. Parker is an idea that will help prevent this problem.
-        </p>
-      </div>
+<article class="sans-serif ph4 ph5-ns center mw8 w-100 dark-gray">
 
-      <div class="measure f3 center mv5">
-        <h1 class="fw6 f3 green">How will Parker solve the problem?</h1>
-        <p class="lh-copy measure f3">
-            Parker's main priority is to digitalize the parking pass experience. By doing so we will eliminate the need for blank stubs and toner. As someone who's constantly irritated by daily commute, I wanted Parker's experience to be as non-intrusive and low maintanence as possible.
-        </p>
-        <a href="#imgparker1">
-        <img src="./images/parker/qrcodescan.png" class="db pt4 w-100"/>
-        </a>
-        <a href="#_" class="lightbox" id="imgparker1">
-          <img src="./images/parker/qrcodescan.png">
-        </a>
-      </div>
+  <header class="f3 center mv4 mv5-ns">
+    <h1 class="fw6 f3 f2-ns fl w-100 mt0 mb3">Collide - Notifications</h1>
+    <h2 class="fw4 f4 fl w-100 mt0 mb3">
+      Serve users notifications that are actionable and/or informative.
+    </h2>
+      <p class="f6 ttu tracked gray">Case study</p>
+      <img src="./images/parker/header.png" class="db w-100 mv5">
+  </header>
 
-      <div class="measure f3 center mv5 ">
-          <h1 class="fw6 f3">Thinking about the process</h1>
-          <p class="lh-copy measure f3 ">
-              I wanted to narrow down the user journey as much as possible, presenting screens that are considered to be necessary. No additional steps and fluff required.
-          </p>
-          <a href="#imgparker2">
-            <img src="./images/parker/userflow.png" class="db pt4 w-100"/>
-            </a>
-            <a href="#_" class="lightbox" id="imgparker2">
-            <img src="./images/parker/userflow.png">
-            </a>
-      </div>
-
-      <div class="measure f3 center mv5 ">
-        <h1 class="fw6 f3">The outcome</h1>
-        <a href="#imgparker3">
-          <img src="./images/parker/UIshots.png" class="db pt4 w-100"/>
-          </a>
-          <a href="#_" class="lightbox" id="imgparker3">
-          <img src="./images/parker/UIshots.png">
-          </a>
-      </div>
-
-      <blockquote class="mh0 pr0 mv6">
-        <p class="f2 f1-l fw1 mv0 tc dark-gray lh-title baskerville">
-          “I found myself throwing away a ridiculous amount of parking garage tickets”
-        </p>
-      </blockquote> 
-
-      <div class="measure f3 center mv5">
-        <h1 class="fw6 f3">Reflections and future plans</h1>
-        <p class="lh-copy measure f3">
-          This is a fantasy piece. In order to bring this project to life it would need proper infrastructure binding with modern technologies used within 
-          the majority of parking garages across the world. Parker could lead to substantial savings from not having to buy physical materials that are dispensed in parking garages.
+  
+  <div class="measure f3 center mt5 mb3">
+    <h1 class="fw6 f4 f3-ns gray">Understanding the intent</h1>
+      <p class="lh-copy measure f4 f3-ns">
+        Notifications are implemented to alert users of activity related to their account. They can be beneficial and irritating, thus must be curated with explicit intent and elegance. Users allowing notifications from a product is an act of trust, and we do not want to take that for granted. 
       </p>
+    </div>    
+
+    <div class="flex flex-wrap measure f3 center w-100">
+        <div class="fl w-100 w-50-l ph3">
+            <p class="f5 f4-ns lh-title mb0 b">
+              Good notifications are:
+            </p>
+            <ul class="lh-copy measure mv1">
+                <li class="f6 pv2"><span class="b">Non-interfering</span> - Let users know that something important has happened and would be beneficial for the user to pay attention to.
+                </li>
+                <li class="f6 pv2"><span class="b">Contextual</span> - Notifications should be direct. Be explicit in letting the user know what has happened and whether they should actively interact with it or not.
+                </li>
+                <li class="f6 pv2"><span class="b">Manageable</span> - Give the users the ability to manage how and when these notifications occur.*
+                </li>
+              </ul>
+          </div>
+          <div class="fl w-100 w-50-l ph3">
+            <p class="f5 f4-ns lh-title mb0 b">
+              Bad notifications are:
+            </p>
+            <ul class="lh-copy measure mv1">
+                <li class="f6 pv2"><span class="b">Valueless</span> - If there is no direct value for the user to interact with the notice, then it should not be a notification.
+                </li>
+                <li class="f6 pv2"><span class="b">Disruptive</span> - Do not cause a false sense of urgency. Notifications should be served when the user is not in the progress of an activity. 
+                </li>
+                <li class="f6 pv2"><span class="b">Generic</span> - Unless necessary, information within notifications shouldn't be generic.
+                </li>
+              </ul>
+          </div>
+        </div>
+
+        <blockquote class="mh0 pr0 mv5 mv6-ns">
+            <p class="f3 f2-ns fw1 tc dark-gray lh-title baskerville">
+              Smart notifications will feel more like a note from your assistant or another human being
+            </p>
+            <p class="tc f7 ttu tracked fs-normal gray">Intercom</p>
+        </blockquote> 
+
+  <div class="measure f3 center mv5 mv3">
+    <h1 class="fw6 f4 f3-ns gray">Problem</h1>
+      <p class="lh-copy measure f4 f3-ns">
+        Users weren't alerted of new activity to their account.
+      </p>
+      <ul class="lh-copy measure">
+        <li class="f5 f4-ns pv3">Collide notifications are currently being served through direct SMS (twilio) and emails. These are problematic for many reasons. Twilio SMS notifications are costly and unsoliciated. They also enforces the user to an experience outside of Collide. As far as emails go, our metrics show most of our emails don't end up being opened. 
+        </li>
+      </ul>
+  </div>
+
+  <div class="measure f3 center mv5">
+    <h1 class="fw6 f4 f3-ns gray">Proposed solution</h1>
+      <p class="lh-copy measure f4 f3-ns">
+        Implement in-app Notifications that is based off of a mixed model anchor.
+      </p>
+        <ul class="lh-copy measure">
+          <li class="f5 f4-ns pv3">A general anchor for notifications is greatly beneficial for a product like Collide, which will continue to add features on top of what is currently available.
+          </li>
+        </ul>
+  </div>
+
+  <div class="measure f3 center mv5">
+    <h1 class="fw6 f4 f3-ns gray">What makes sense for Collide</h1>
+      <p class="lh-copy measure f4 f3-ns">
+        By understanding the basic principles of notifications I can tell <span class="b">Mixed Model</span> notifications works best for Collide. Collide's business model poses the need for a complex and diverse suite of features to fit business needs.
+      </p>
+  </div>
+
+  <div class="measure f3 center mv5">
+    <a href="#imgparker2">
+      <img src="./images/collide/onboarding/solutionwhiteboard.jpg" class="db w-100"/>
+      </a>
+      <a href="#_" class="lightbox" id="imgparker2">
+      <img src="./images/collide/onboarding/solutionwhiteboard.jpg">
+    </a>
+  </div>
+
+
+  <blockquote class="mh0 pr0 mv6">
+    <p class="f2 f2-l fw1 mv0 tc dark-gray lh-title baskerville">
+      The <span class="orange">Mixed Model</span> method works best for products that serves notifications from multiple anchors.
+    </p>
+  </blockquote> 
+  
+
+</div>
+
+  <div class="measure f3 center mv5">
+      <h1 class="fw6 f4 f3-ns">Sign up</h1>
+      <p class="lh-copy measure f4 f3-ns">
+        We wanted this process to be as quick and simple as possible, while still meeting critical requirements. We only ask for information that is required for users to create an account on Collide. By doing so, we reduced the onboarding process down from 13 screens to 3.
+      </p>
+
+      <div class="cf mw8 center pv4">
+        <a href="#img-collide-onboarding" class="fl w-33 overflow-hidden link ph1">
+          <div role="img" class="grow aspect-ratio--5x8" style="background: url(./images/collide/onboarding/signup_account.jpg) no-repeat center center; background-size: cover;"></div>
+        </a>
+        <a href="#_" class="lightbox" id="img-collide-onboarding">
+          <img src="./images/collide/onboarding/signup_account.jpg">
+        </a>
+
+        <a href="#img-collide-onboarding" class="fl w-33 link overflow-hidden link ph1">
+          <div role="img" class="grow aspect-ratio--5x8" style="background: url(./images/collide/onboarding/signup_profile.jpg) no-repeat center center; background-size: cover;"></div>
+        </a>
+        <a href="#_" class="lightbox" id="img-collide-onboarding">
+          <img src="./images/collide/onboarding/signup_profile.jpg">
+        </a>
+
+        <a href="#img-collide-onboarding" class="fl w-33 link overflow-hidden link ph1">
+          <div role="img" class="grow aspect-ratio--5x8" style="background: url(./images/collide/onboarding/signup_congrats.jpg) no-repeat center center; background-size: cover;"></div>
+        </a>
+        <a href="#_" class="lightbox" id="img-collide-onboarding">
+          <img src="./images/collide/onboarding/signup_congrats.jpg">
+        </a>
       </div>
 
+  </div>
+
+  <div class="measure f3 center mv5">
+    <h1 class="fw6 f4 f3-ns">Launch checklist</h1>
+      <p class="lh-copy measure f4 f3-ns">
+        Once the user has completed the Account creation process, they are then directed to their dashboard. Users can choose to explore as they please or choose to click on the Launch checklist prompt.  
+      </p>
+    <div class="pv4">
+      <a href="#imgparker2">
+        <img src="./images/parker/userflow.png" class="db w-100"/>
+        </a>
+        <a href="#_" class="lightbox" id="imgparker2">
+        <img src="./images/parker/userflow.png">
+      </a>
     </div>
-  </article>
-  <section class="cf mt5 pv5 bt b--black-05 ph6-l">
-    <h1 class="tc f5 ttu fw6 tracked mb4 avenir">Other Projects</h1>
-    <a href="#0" class="fl w-third w-25-ns border-box overflow-hidden ba bw2 white" title="">
-      <div class="grow cover bg-center pv5 pv6-l" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/hw-080411-cargo_960.jpg);"></div>
-    </a>
-    <a href="#0" class="fl w-third w-25-ns border-box overflow-hidden  ba bw2 white" title="">
-      <div class="grow cover bg-top pv5 pv6-l" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/hwspringtour-cargo_960-1.jpg);"></div>
-    </a>
-    <a href="#0" class="fl w-third w-25-ns border-box overflow-hidden ba bw2 white" title="">
-      <div class="grow cover bg-top pv5 pv6-l" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/cc010611.s_960.jpg);"></div>
-    </a>
-    <a href="#0" class="fl w-100 w-25-ns border-box overflow-hidden ba bw2 white" title="">
-      <div class="grow cover bg-top pv5 pv6-l" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/adam-stern-031209_960-2.jpg);"></div>
-    </a>
-    <a href="#0" class="fl w-50 border-box overflow-hidden ba bw2 white" title="">
-      <div class="grow cover bg-center pv5 pv7-l" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/zh170311.4.cargo_960.jpg);"></div>
-    </a>
-    <a href="#0" class="fl w-50 border-box overflow-hidden ba bw2 white" title="">
-      <div class="grow cover bg-center pv5 pv7-l" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/hw090911_960.jpg);"></div>
-    </a>
-  </section>
-</main>
+    <p class="lh-copy measure f4 f3-ns">
+      The launch checklist acts as a to-do list for confused users. It was not implemented with the intent of forcing every user to use it.
+    </p>
+</div>
 
+  <div class="measure f3 center mv5">
+    <h1 class="fw6 f4 f3-ns">Reflections and future plans</h1>
+      <p class="lh-copy measure f4 f3-ns">
+        This is a fantasy piece. In order to bring this project to life it would need proper infrastructure binding with modern technologies used within 
+        the majority of parking garages across the world. Parker could lead to substantial savings from not having to buy physical materials that are dispensed in parking garages.
+      </p>
+  </div>
 
-<!-- Video Player
-          
-          <div class="aspect-ratio aspect-ratio--16x9 mv5">
-          <iframe src="https://www.youtube.com/embed/LAr6oAKieHk" class="aspect-ratio--object" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div> 
-      
-      -->
-
-
-</body>
-</html>
+</article>
