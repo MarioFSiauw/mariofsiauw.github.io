@@ -14,7 +14,14 @@ title: Notifications - Case Study
       <img src="./images/parker/header.png" class="db w-100 mv5">
   </header>
 
-  
+  <div class="measure f3 center mv6">
+      <h3 class="measure lh-title f3 f2-ns">
+        <span class="bg-black-90 lh-copy white">
+        As a user, I want to receive notifications so that I can stay updated on my account's activity.
+        </span>
+      </h3>
+  </div>
+
   <div class="measure f3 center mt5 mb3">
     <h1 class="fw6 f4 f3-ns gray">Understanding the intent</h1>
       <p class="lh-copy measure f4 f3-ns">
@@ -53,7 +60,7 @@ title: Notifications - Case Study
 
         <blockquote class="mh0 pr0 mv5 mv6-ns">
             <p class="f3 f2-ns fw1 tc dark-gray lh-title baskerville">
-              Smart notifications will feel more like a note from your assistant or another human being
+              "Smart notifications will feel more like a note from your assistant or another human being"
             </p>
             <p class="tc f7 ttu tracked fs-normal gray">Intercom</p>
         </blockquote> 
@@ -61,52 +68,47 @@ title: Notifications - Case Study
   <div class="measure f3 center mv5 mv3">
     <h1 class="fw6 f4 f3-ns gray">Problem</h1>
       <p class="lh-copy measure f4 f3-ns">
-        Users weren't alerted of new activity to their account.
+        Users weren't alerted of new activity to their account. Collide notifications are currently being served through direct SMS (twilio) and emails. These are problematic for many reasons. Twilio SMS notifications are costly and unsoliciated. They also enforces the user to an experience outside of Collide. As far as emails go, our metrics show most of our emails don't end up being opened.
       </p>
-      <ul class="lh-copy measure">
-        <li class="f5 f4-ns pv3">Collide notifications are currently being served through direct SMS (twilio) and emails. These are problematic for many reasons. Twilio SMS notifications are costly and unsoliciated. They also enforces the user to an experience outside of Collide. As far as emails go, our metrics show most of our emails don't end up being opened. 
-        </li>
-      </ul>
   </div>
 
   <div class="measure f3 center mv5">
     <h1 class="fw6 f4 f3-ns gray">Proposed solution</h1>
       <p class="lh-copy measure f4 f3-ns">
-        Implement in-app notifications.
+        Implement in-app notifications. It's no surprise a notification system is beneficial to a product and its users. What is surprising is how Collide has gone this long without one. This was one of my biggest goals to achieve during my time at Collide.
       </p>
-        <ul class="lh-copy measure">
-          <li class="f5 f4-ns pv3">It's no surprise a notification system is beneficial to a product and its users. What is surprising is how Collide has gone this long without one. This was one of my biggest goals to achieve during my time at Collide.
-          </li>
-        </ul>
-        <div class="pv4">
-            <a href="#imgnotifications1">
-              <img src="./images/collide/notifications/userflow1.png" class="db w-100"/>
-              </a>
-              <a href="#_" class="lightbox" id="imgnotifications1">
-              <img src="./images/collide/notifications/userflow1.png">
-            </a>
-          </div>
+    </div>
+
+    <div class="measure f3 center mv6">
+      <a href="#imgnotifications1">
+        <img src="./images/collide/notifications/userflow1.png" class="db w-100"/>
+        </a>
+        <a href="#_" class="lightbox" id="imgnotifications1">
+        <img src="./images/collide/notifications/userflow1.png">
+      </a>
     </div>
 
   <div class="measure f3 center mv5">
       <h1 class="fw6 f4 f3-ns gray">What makes sense for Collide</h1>
-        <p class="lh-copy measure f4 f3-ns">
-          By understanding the basic principles of notifications, <span class="b">Mixed Model</span> notifications works best for Collide. Collide's business model poses the need for a complex and diverse suite of features to fit business needs.
+      <p class="lh-copy measure f4 f3-ns">
+          By understanding the basic principles of notifications, <span class="b">Mixed Model</span> notifications works best for Collide. Collide's business model poses the need for a complex and diverse suite of features to fit business needs. Mixed Model notifications will easily scale with the product as it continues to grow.
         </p>
-        <div class="pv4">
-            <a href="#imgnotifications2">
-              <img src="./images/collide/notifications/userflow2.png" class="db w-100"/>
-              </a>
-              <a href="#_" class="lightbox" id="imgnotifications2">
-              <img src="./images/collide/notifications/userflow2.png">
-            </a>
-          </div>
-          <!--NEED COPY HERE-->
-          <p class="lh-copy measure f4 f3-ns">
-            NEED COPY HERE
-          </p>
   </div>
-  
+
+  <div class="measure f3 center mv6">
+    <a href="#imgnotifications2">
+      <img src="./images/collide/notifications/userflow2.png" class="db w-100"/>
+      </a>
+      <a href="#_" class="lightbox" id="imgnotifications2">
+      <img src="./images/collide/notifications/userflow2.png">
+    </a>
+  </div>
+
+  <div class="measure f3 center mv5">
+    <p class="lh-copy measure f4 f3-ns">
+      Let's break down how notifications will be built. Mixed Model notifications consist of a <span class="b">Source</span> and an <span class="b">Anchor</span>. One determines where the notification is coming from, while the other determines where it should be sent.
+    </p>
+  </div>
 
   <div class="flex flex-wrap measure f3 center w-100">
       <div class="fl w-100 w-50-l ph3">
@@ -138,40 +140,55 @@ title: Notifications - Case Study
   </div>
 
   <div class="measure f3 center mv5">
-      <h1 class="fw6 f4 f3-ns">Sign up</h1>
+      <h1 class="fw6 f4 f3-ns">Implementation</h1>
       <p class="lh-copy measure f4 f3-ns">
-        We wanted this process to be as quick and simple as possible, while still meeting critical requirements. We only ask for information that is required for users to create an account on Collide. By doing so, we reduced the onboarding process down from 13 screens to 3.
+        There are two main things to focus on; creating the notifications and anchors, and getting user permission to subscribe to receive notifications.
       </p>
+      <ul class="lh-copy measure v1">
+        <li class="f5 pv2">
+            Implement a custom banner that asks users to enable notifications. They can either allow (which will prompt browser permission prompt) or dismiss it.
+        </li>
+        <li class="f5 pv2">
+            Ask users to allow notifications when the benefits are most obvious to them. (i.e. when a supporter requests a video chat from a creator, serve a message that says "Would you like to be notified when your video chat is ready?").
+        </li>
+      </ul>
       <div class="cf mw8 center pv4">
-        <a href="#img-collide-onboarding" class="fl w-33 overflow-hidden link ph1">
-          <div role="img" class="grow aspect-ratio--5x8" style="background: url(./images/collide/onboarding/signup_account.jpg) no-repeat center center; background-size: cover;"></div>
-        </a>
-        <a href="#_" class="lightbox" id="img-collide-onboarding">
-          <img src="./images/collide/onboarding/signup_account.jpg">
-        </a>
-
-        <a href="#img-collide-onboarding" class="fl w-33 link overflow-hidden link ph1">
-          <div role="img" class="grow aspect-ratio--5x8" style="background: url(./images/collide/onboarding/signup_profile.jpg) no-repeat center center; background-size: cover;"></div>
-        </a>
-        <a href="#_" class="lightbox" id="img-collide-onboarding">
-          <img src="./images/collide/onboarding/signup_profile.jpg">
-        </a>
-
-        <a href="#img-collide-onboarding" class="fl w-33 link overflow-hidden link ph1">
-          <div role="img" class="grow aspect-ratio--5x8" style="background: url(./images/collide/onboarding/signup_congrats.jpg) no-repeat center center; background-size: cover;"></div>
-        </a>
-        <a href="#_" class="lightbox" id="img-collide-onboarding">
-          <img src="./images/collide/onboarding/signup_congrats.jpg">
-        </a>
-      </div>
+          <a href="#img-collide-notifications1" class="fl w-33 overflow-hidden link ph1">
+            <div role="img" class="grow aspect-ratio--5x8" style="background: url(./images/collide/notifications/Mobile-notification-center.jpg) no-repeat center center; background-size: cover;"></div>
+          </a>
+          <a href="#_" class="lightbox" id="img-collide-notifications1">
+            <img src="./images/collide/notifications/Mobile-notification-center.jpg">
+          </a>
+    
+          <a href="#img-collide-notifications2" class="fl w-33 link overflow-hidden link ph1">
+            <div role="img" class="grow aspect-ratio--5x8" style="background: url(./images/collide/notifications/Mobile_-_Permission_Prompt.jpg) no-repeat center center; background-size: cover;"></div>
+          </a>
+          <a href="#_" class="lightbox" id="img-collide-notifications2">
+            <img src="./images/collide/notifications/Mobile_-_Permission_Prompt.jpg">
+          </a>
+    
+          <a href="#img-collide-notifications3" class="fl w-33 link overflow-hidden link ph1">
+            <div role="img" class="grow aspect-ratio--5x8" style="background: url(./images/collide/notifications/Banner_permission_prompt.jpg) no-repeat center center; background-size: cover;"></div>
+          </a>
+          <a href="#_" class="lightbox" id="img-collide-notifications3">
+            <img src="./images/collide/notifications/Banner_permission_prompt.jpg">
+          </a>
+        </div>
   </div>
 
 
+
+
   <div class="measure f3 center mv5">
-    <h1 class="fw6 f4 f3-ns gray">Concerns with the solution</h1>
+    <h1 class="fw6 f4 f3-ns gray">Final thoughts</h1>
       <p class="lh-copy measure f4 f3-ns">
-        This is a fantasy piece. In order to bring this project to life it would need proper infrastructure binding with modern technologies used within 
-        the majority of parking garages across the world. Parker could lead to substantial savings from not having to buy physical materials that are dispensed in parking garages.
+        There are several things to be concerned about the solution we have picked. One would be users not allowing permission for Collide to send them notifications. Which will defeat the whole purpose of notifications. 
+      </p>
+      <p class="lh-copy measure f4 f3-ns">
+          Another problem is not implementing a way for users to manage their notifications. This is a temporary hold for now and will be implemented once resources are available.
+      </p>
+      <p class="lh-copy measure f4 f3-ns">
+        Overall, finally having a notifications will bring lots of positivities to Collide that will ultimately drive user success and engagement.
       </p>
   </div>
 
