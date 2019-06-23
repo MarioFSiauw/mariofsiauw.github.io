@@ -7,185 +7,156 @@ title: Bot-It - Case Study
 
   <header class="f3 center mv4 mv5-ns">
     <h1 class="fw6 f3 f2-ns fl w-100 mt0 mb3">Bot-It</h1>
-    <h2 class="fw4 f5 f4-ns fl w-100 mt0 mb3">
-        Helping you automate the simple tasks in life.
-    </h2>
       <p class="f7 f6-ns ttu tracked gray">Case study</p>
-      <img src="./images/botit/headerimg.jpg" class="db w-100 mv5">
+      <p class="f7 f6-ns ttu tracked gray">Freelance</p>
+      <img src="./images/botit/cover.jpg" class="db w-100 mv5">
   </header>
 
-  <div class="measure f3 center mv6">
-      <h3 class="measure lh-title f3 f2-ns">
-        <span class="bg-black-90 lh-copy white">
-        As a user, I want to receive notifications so that I can stay updated on my account's activity.
-        </span>
-      </h3>
-  </div>
-
   <div class="measure f3 center mt5 mb3">
-    <h1 class="fw6 f4 f3-ns gray">Exploration</h1>
+    <h1 class="fw6 f4 f3-ns gray">A bit of background information</h1>
       <p class="lh-copy measure f4 f3-ns">
-        Notifications are implemented to alert users of activity related to their account. They can be beneficial and irritating, thus must be curated with explicit intent and elegance. Users allowing notifications from a product is an act of trust, and we do not want to take that for granted. 
+        Bot-It is a task builder and automator that allows users to create "Bots" to run tasks you assigned. 
+      </p>
+      <p class="lh-copy measure f4 f3-ns">
+        When my client first approached me with this idea he had for an automation type of product, I was instantly intrigued. He told me stories of his colleagues dreading having to clock-in for work, clock-out for lunch and so forth.
       </p>
     </div>    
 
-    <div class="flex flex-wrap measure f3 center w-100">
-        <div class="fl w-100 w-50-l ph3">
-            <p class="f5 f4-ns lh-title mb0 b">
-              Good notifications are:
-            </p>
-            <ul class="lh-copy measure mv1">
-                <li class="f6 pv2"><span class="b">Non-interfering</span> - Let users know that something important has happened and would be beneficial for the user to pay attention to.
-                </li>
-                <li class="f6 pv2"><span class="b">Contextual</span> - Notifications should be direct. Be explicit in letting the user know what has happened and whether they should actively interact with it or not.
-                </li>
-                <li class="f6 pv2"><span class="b">Manageable</span> - Give the users the ability to manage how and when these notifications occur.*
-                </li>
-              </ul>
-          </div>
-          <div class="fl w-100 w-50-l ph3">
-            <p class="f5 f4-ns lh-title mb0 b">
-              Bad notifications are:
-            </p>
-            <ul class="lh-copy measure mv1">
-                <li class="f6 pv2"><span class="b">Valueless</span> - If there is no direct value for the user to interact with the notice, then it should not be a notification.
-                </li>
-                <li class="f6 pv2"><span class="b">Disruptive</span> - Do not cause a false sense of urgency. Notifications should be served when the user is not in the progress of an activity. 
-                </li>
-                <li class="f6 pv2"><span class="b">Generic</span> - Unless necessary, information within notifications shouldn't be generic.
-                </li>
-              </ul>
-          </div>
-        </div>
+    <div class="measure f3 center mv5 mv3">
+      <h1 class="fw6 f4 f3-ns gray">Exploration</h1>
+        <p class="lh-copy measure f4 f3-ns">
+          Once this project was kicked off, I started it off by asking a list of questions.  
+          </p>
+          <ul class="lh-copy measure">
+              <li class="f5 f4-ns pv1"><span class="b">What's the scope of the project?</span></li>
+              <li class="f5 f4-ns pv1"><span class="b">What's the primary function of the product? What's the secondary?</span></li>
+              <li class="f5 f4-ns pv1"><span class="b">Who are the primary users?</span></li>
+              <li class="f5 f4-ns pv1"><span class="b">How do you imagine users interact with the product?</span></li>
+            </ul>
+          <p class="lh-copy measure f4 f3-ns">
+          Asking the right questions early rewards you with large dividends later on.
+        </p>
+    </div>
 
-        <blockquote class="mh0 pr0 mv5 mv6-ns">
-            <p class="f3 f2-ns fw1 tc dark-gray lh-title baskerville">
-              "Smart notifications will feel more like a note from your assistant or another human being"
-            </p>
-            <p class="tc f7 ttu tracked fs-normal gray">Intercom</p>
-        </blockquote> 
+    <div class="measure f3 center mv5 mv3">
+        <p class="lh-copy measure f4 f3-ns">
+            The scope of this project was short so the list of features and functionality had to be short, but highly functional. The three main features I focused on were Creating tasks, Running tasks, and Returning the results.
+        </p>
+    </div>
+
+    <div class="measure f3 center">
+          <img src="./images/botit/usebehavior.png" class="db w-100"/>
+    </div>
 
   <div class="measure f3 center mv5 mv3">
-    <h1 class="fw6 f4 f3-ns gray">Problem</h1>
       <p class="lh-copy measure f4 f3-ns">
-        Users weren't alerted of new activity to their account. Collide notifications are currently being served through direct SMS (twilio) and emails. These are problematic for many reasons. Twilio SMS notifications are costly and unsoliciated. They also enforces the user to an experience outside of Collide. As far as emails go, our metrics show most of our emails don't end up being opened.
+          The primary function would be Run Tasks, the secondary function would be Creating Tasks
+      </p>
+  </div>
+
+  <div class="measure f3 center">
+      <img src="./images/botit/priorityuseaction.png" class="db w-100"/>
+  </div>
+
+  <div class="measure f3 center mv3">
+      <p class="lh-copy measure f4 f3-ns">
+        Next step was to write out user stories based off of his examples and others found through research.
+      </p>
+    </div>
+
+    <div class="measure f3 center">
+        <img src="./images/botit/userstory.png" class="db w-100"/>
+    </div>
+
+  <div class="measure f3 center mv3">
+      <p class="lh-copy measure f4 f3-ns">
+          I used those stories to define the user journey. I highlighted 4 key points in the user flow; Onboarding, Entering a URL, Building the job/bot and the user Dashboard.
       </p>
   </div>
 
   <div class="measure f3 center mv5">
-    <h1 class="fw6 f4 f3-ns gray">Proposed solution</h1>
-      <p class="lh-copy measure f4 f3-ns">
-        Implement in-app notifications. It's no surprise a notification system is beneficial to a product and its users. What is surprising is how Collide has gone this long without one. This was one of my biggest goals to achieve during my time at Collide.
-      </p>
-    </div>
-
-    <div class="measure f3 center mv6">
-      <a href="#imgnotifications1">
-        <img src="./images/collide/notifications/userflow1.png" class="db w-100"/>
-        </a>
-        <a href="#_" class="lightbox" id="imgnotifications1">
-        <img src="./images/collide/notifications/userflow1.png">
+      <a href="#imgbotit1">
+      <img src="./images/botit/initialIA.png" class="db w-100"/>
       </a>
-    </div>
+      <a href="#_" class="lightbox" id="imgbotit1">
+          <img src="./images/botit/initialIA.png">
+        </a>
+  </div>
 
-  <div class="measure f3 center mv5">
-      <h1 class="fw6 f4 f3-ns gray">What makes sense for Collide</h1>
-      <p class="lh-copy measure f4 f3-ns">
-          By understanding the basic principles of notifications, <span class="b">Mixed Model</span> notifications works best for Collide. Collide's business model poses the need for a complex and diverse suite of features to fit business needs. Mixed Model notifications will easily scale with the product as it continues to grow.
+  <div class="measure f3 center mv3">
+      <h1 class="fw6 f4 f3-ns gray">Getting started</h1>
+        <p class="lh-copy measure f4 f3-ns">
+          I mapped out the user journey on lo-fi wireframes to better describe interaction points and understand the main steps performed by the user.
         </p>
   </div>
 
-  <div class="measure f3 center mv6">
-    <a href="#imgnotifications2">
-      <img src="./images/collide/notifications/userflow2.png" class="db w-100"/>
+  <div class="measure f3 center mv5">
+      <a href="#imgbotit2">
+      <img src="./images/botit/initialwf.png" class="db w-100"/>
       </a>
-      <a href="#_" class="lightbox" id="imgnotifications2">
-      <img src="./images/collide/notifications/userflow2.png">
+      <a href="#_" class="lightbox" id="imgbotit1">
+          <img src="./images/botit/initialwf.png">
+        </a>
+  </div>
+
+  <div class="measure f3 center mv5">
+      <p class="lh-copy measure f4 f3-ns">
+          I worked continuously with the client to reiterate the designs based off of feedback given after every cycle.
+        </p>
+  </div>
+
+  <div class="measure f3 center">
+    <a href="#imgbotit3">
+      <img src="./images/botit/iteration1.png" class="db w-100"/>
+      </a>
+      <a href="#_" class="lightbox" id="imgbotit3">
+      <img src="./images/botit/iteration1.png">
     </a>
   </div>
 
   <div class="measure f3 center mv5">
+    <h1 class="fw6 f4 f3-ns gray">Executing designs</h1>
     <p class="lh-copy measure f4 f3-ns">
-      Let's break down how notifications will be built. Mixed Model notifications consist of a <span class="b">Source</span> and an <span class="b">Anchor</span>. One determines where the notification is coming from, while the other determines where it should be sent.
+      Once the blueprint was solidified, I worked with the client to figure out what he thinks the product should look and feel like. Then, I started integrating high fidelity designs.
     </p>
+    <p>I created reusable components that are used throughout the product.</p>
   </div>
 
-  <div class="flex flex-wrap measure f3 center w-100">
-      <div class="fl w-100 w-50-l ph3">
-          <p class="f5 f4-ns lh-title mb0 b">
-            Sources determine...
+  <div class="measure f3 center">
+      <img src="./images/botit/components.png" class="db w-100"/>
+  </div>
+
+  <div class="measure f3 center mv5">
+      <p class="lh-copy measure f4 f3-ns">
+        Finalized designs (needs more copy)
+      </p>
+    </div>
+
+  <div class="measure f3 center">
+    <a href="#imgbotit4">
+      <img src="./images/botit/finaldesign1.png" class="db w-100"/>
+      </a>
+      <a href="#_" class="lightbox" id="imgbotit4">
+      <img src="./images/botit/finaldesign1.png">
+    </a>
+  </div>
+
+  <div class="measure f3 center">
+    <a href="#imgbotit5">
+      <img src="./images/botit/finaldesign2.png" class="db w-100"/>
+      </a>
+      <a href="#_" class="lightbox" id="imgbotit5">
+      <img src="./images/botit/finaldesign2.png">
+    </a>
+  </div>
+
+  <div class="measure f3 center mv5">
+    <h1 class="fw6 f4 f3-ns gray">Reflection</h1>
+      <p class="lh-copy measure f4 f3-ns">
+          My role inn this project was complete at this point. Both the client and I feel confident with the direction this is taking. I was able to include the feature needs within the scope given. 
+          <p class="lh-copy measure f4 f3-ns">
+          There were several nice-to-have features that were considered, such as GPS location triggers, but was ultimately decided to be put-off for a later development stage.
           </p>
-          <ul class="lh-copy measure mv1">
-              <li class="f6 pv2"><span class="b">Profile</span> - Relating to the profile of a user. Change if bio, new followers/subscribers, etc..
-              </li>
-              <li class="f6 pv2"><span class="b">Posts</span> - Relating to activity of a specific post. Comments, Likes, etc..
-              </li>
-              <li class="f6 pv2"><span class="b">Events</span> - Relating to primary functional activity between a Supporter and Creator. New Uploads, new Subscriptions, etc..
-                </li>
-              <li class="f6 pv2"><span class="b">Connect</span> - Relating to any activity of the in-app messenger, video chat, and phone calls.
-              </li>
-            </ul>
-          </div>
-            <div class="fl w-100 w-50-l ph3">
-                <p class="f5 f4-ns lh-title mb0 b">
-                  Anchors are...
-                </p>
-                <ul class="lh-copy measure mv1">
-                    <li class="f6 pv2"><span class="b">Messenger</span> - All related activity around our in-app messenger will be directed directly to its own anchor.
-                    </li>
-                    <li class="f6 pv2"><span class="b">Notification Center</span> - This interface will house most notifications that is served to users. Each notification will be distinguishable by the type of source 
-                    </li>
-                  </ul>
-            </div>
-  </div>
-
-  <div class="measure f3 center mv5">
-      <h1 class="fw6 f4 f3-ns">Implementation</h1>
-      <p class="lh-copy measure f4 f3-ns">
-        There are two main things to focus on; creating the notifications and anchors, and getting user permission to subscribe to receive notifications.
-      </p>
-      <ul class="lh-copy measure v1">
-        <li class="f5 pv2">
-            Implement a custom banner that asks users to enable notifications. They can either allow (which will prompt browser permission prompt) or dismiss it.
-        </li>
-        <li class="f5 pv2">
-            Ask users to allow notifications when the benefits are most obvious to them. (i.e. when a supporter requests a video chat from a creator, serve a message that says "Would you like to be notified when your video chat is ready?").
-        </li>
-      </ul>
-      <div class="cf mw8 center pv4">
-          <a href="#img-collide-notifications1" class="fl w-33 overflow-hidden link ph1">
-            <div role="img" class="grow aspect-ratio--5x8" style="background: url(./images/collide/notifications/Mobile-notification-center.jpg) no-repeat center center; background-size: cover;"></div>
-          </a>
-          <a href="#_" class="lightbox" id="img-collide-notifications1">
-            <img src="./images/collide/notifications/Mobile-notification-center.jpg">
-          </a>
-    
-          <a href="#img-collide-notifications2" class="fl w-33 link overflow-hidden link ph1">
-            <div role="img" class="grow aspect-ratio--5x8" style="background: url(./images/collide/notifications/Mobile_-_Permission_Prompt.jpg) no-repeat center center; background-size: cover;"></div>
-          </a>
-          <a href="#_" class="lightbox" id="img-collide-notifications2">
-            <img src="./images/collide/notifications/Mobile_-_Permission_Prompt.jpg">
-          </a>
-    
-          <a href="#img-collide-notifications3" class="fl w-33 link overflow-hidden link ph1">
-            <div role="img" class="grow aspect-ratio--5x8" style="background: url(./images/collide/notifications/Banner_permission_prompt.jpg) no-repeat center center; background-size: cover;"></div>
-          </a>
-          <a href="#_" class="lightbox" id="img-collide-notifications3">
-            <img src="./images/collide/notifications/Banner_permission_prompt.jpg">
-          </a>
-        </div>
-  </div>
-
-  <div class="measure f3 center mv5">
-    <h1 class="fw6 f4 f3-ns gray">Final thoughts</h1>
-      <p class="lh-copy measure f4 f3-ns">
-        There are several things to be concerned about the solution we have picked. One would be users not allowing permission for Collide to send them notifications. Which will defeat the whole purpose of notifications. 
-      </p>
-      <p class="lh-copy measure f4 f3-ns">
-          Another problem is not implementing a way for users to manage their notifications. This is a temporary hold for now and will be implemented once resources are available.
-      </p>
-      <p class="lh-copy measure f4 f3-ns">
-        Overall, finally having a notifications will bring lots of positivities to Collide that will ultimately drive user success and engagement.
       </p>
   </div>
 
