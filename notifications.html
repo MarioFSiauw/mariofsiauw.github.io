@@ -16,24 +16,21 @@ title: Notifications - Case Study
       <img src="./images/collide/notifications/headerimg.jpg" class="db w-100 mv5">
   </header>
 
-  <div class="measure f3 center mv6">
-      <h3 class="measure lh-title f3 f2-ns">
-        <span class="bg-black-90 lh-copy white">
-        As a user, I want to receive notifications so that I can stay updated on my account's activity.
-        </span>
-      </h3>
-  </div>
-
   <div class="measure f3 center mt5 mb3">
-    <h1 class="fw6 f4 f3-ns gray">Understanding the intent</h1>
+    <h1 class="fw6 f4 f3-ns gray">Brief</h1>
       <p class="lh-copy measure f4 f3-ns">
-        Notifications are implemented to alert users of activity related to their account. They can be beneficial and irritating, thus must be curated with explicit intent and elegance. Users allowing notifications from a product is an act of trust, and we do not want to take that for granted. 
-      </p>
+        I was tasked with leading and designing a notifications system for our web app. This had been a feature that was backlogged in the pipeline for a long time.</p>
     </div>    
+
+    <div class="measure f3 center mt5 mb3">
+        <h1 class="fw6 f4 f3-ns gray">Understanding notifications</h1>
+          <p class="lh-copy measure f4 f3-ns">
+              Notifications can be beneficial, but also irritating to a user.  Users allowing notifications from a product is an act of trust, and we do not want to take that for granted. </p>
+        </div>
 
     <div class="flex flex-wrap measure f3 center w-100">
         <div class="fl w-100 w-50-l ph3">
-            <p class="f4 f3-ns lh-title mb0 b">
+            <p class="f4 f3-ns lh-title mb0 b green">
               Good notifications are:
             </p>
             <ul class="lh-copy measure mv1">
@@ -46,7 +43,7 @@ title: Notifications - Case Study
               </ul>
           </div>
           <div class="fl w-100 w-50-l ph3">
-            <p class="f4 f3-ns lh-title mb0 b">
+            <p class="f4 f3-ns lh-title mb0 b red">
               Bad notifications are:
             </p>
             <ul class="lh-copy measure mv1">
@@ -62,100 +59,87 @@ title: Notifications - Case Study
 
         <blockquote class="mh0 pr0 mv5 mv6-ns">
             <p class="f3 f2-ns fw1 tc dark-gray lh-title baskerville">
-              "Smart notifications will feel more like a note from your assistant or another human being"
+              "Don't send notifications whenever you like, consider the users emotional state..."
             </p>
-            <p class="tc f7 ttu tracked fs-normal gray">Intercom</p>
+            <p class="tc f7 ttu tracked fs-normal gray">Nir Eyal on tying external triggers to internal triggers</p>
         </blockquote> 
 
   <div class="measure f3 center mv5 mv3">
-    <h1 class="fw6 f4 f3-ns gray">Problem</h1>
+    <h1 class="fw6 f4 f3-ns gray">Research</h1>
       <p class="lh-copy measure f4 f3-ns">
-        Users weren't alerted of new activity to their account. Collide notifications are currently being served through direct SMS (twilio) and emails. These are problematic for many reasons. Twilio SMS notifications are costly and unsoliciated. They also enforces the user to an experience outside of Collide. As far as emails go, our metrics show most of our emails don't end up being opened.
-      </p>
-  </div>
-
-  <div class="measure f3 center mv5">
-    <h1 class="fw6 f4 f3-ns gray">Proposed solution</h1>
-      <p class="lh-copy measure f4 f3-ns">
-        Implement in-app notifications. It's no surprise a notification system is beneficial to a product and its users. What is surprising is how Collide has gone this long without one. This was one of my biggest goals to achieve during my time at Collide.
+        I began by researching the how web notifications work. I wanted a holistic understanding of the technology before diving into the designs.
       </p>
       <div class="measure f3 center pv4">
-          <a href="#imgnotifications1">
-            <img src="./images/collide/notifications/userflow1.png" class="db w-100"/>
-            </a>
-            <a href="#_" class="lightbox" id="imgnotifications1">
-            <img src="./images/collide/notifications/userflow1.png">
+        <a href="#imgnotifications1">
+          <img src="./images/collide/notifications/userflow1.png" class="db w-100"/>
           </a>
-        </div>
-    </div>
-
-
-
-  <div class="measure f3 center mv5">
-      <h1 class="fw6 f4 f3-ns gray">What makes sense for Collide</h1>
+          <a href="#_" class="lightbox" id="imgnotifications1">
+          <img src="./images/collide/notifications/userflow1.png">
+        </a>
+        <p class="tc f7 ttu tracked fs-normal gray">Push and notifications overview</p>
+      </div>
       <p class="lh-copy measure f4 f3-ns">
-          By understanding the basic principles of notifications, <span class="b">Mixed Model</span> notifications works best for Collide. Collide's business model poses the need for a complex and diverse suite of features to fit business needs. Mixed Model notifications will easily scale with the product as it continues to grow.
-        </p>
-        <div class="measure f3 center pv4">
-            <a href="#imgnotifications2">
-              <img src="./images/collide/notifications/userflow2.png" class="db w-100"/>
-              </a>
-              <a href="#_" class="lightbox" id="imgnotifications2">
-              <img src="./images/collide/notifications/userflow2.png">
-            </a>
-          </div>
+        Luckily, both of our main browser targets (Chrome and Safari) manages notifications similarly. 
+      </p>
+      <p class="lh-copy measure f4 f3-ns">
+        By using Muzli's notification model examples, I decided that a <b>Mixed Notification Model</b> works best due to its ease of scalability. Our business model poses the need for a diverse suite of features to fit business needs.
+      </p>
+      <div class="measure f3 center pv4">
+        <a href="#imgnotifications2">
+          <img src="./images/collide/notifications/userflow2.png" class="db w-100"/>
+          </a>
+          <a href="#_" class="lightbox" id="imgnotifications2">
+          <img src="./images/collide/notifications/userflow2.png">
+        </a>
+        <p class="tc f7 ttu tracked fs-normal gray">Collide's mixed notification model</p>
+      </div>
   </div>
 
-
-
-  <div class="measure f3 center mv5">
-    <p class="lh-copy measure f4 f3-ns">
-      Let's break down how notifications will be built. Mixed Model notifications consist of a <span class="b">Source</span> and an <span class="b">Anchor</span>. One determines where the notification is coming from, while the other determines where it should be sent.
-    </p>
-  </div>
-
-  <div class="flex flex-wrap measure f3 center w-100">
-      <div class="fl w-100 w-50-l ph3">
-          <p class="f4 f3-ns lh-title mb0 b">
-            Sources determine...
-          </p>
-          <ul class="lh-copy measure mv1">
-              <li class="f5 f4-ns pv2"><span class="b">Profile</span> - Relating to the profile of a user. Change if bio, new followers/subscribers, etc..
-              </li>
-              <li class="f5 f4-ns pv2"><span class="b">Posts</span> - Relating to activity of a specific post. Comments, Likes, etc..
-              </li>
-              <li class="f5 f4-ns pv2"><span class="b">Events</span> - Relating to primary functional activity between a Supporter and Creator. New Uploads, new Subscriptions, etc..
-                </li>
-              <li class="f5 f4-ns pv2"><span class="b">Connect</span> - Relating to any activity of the in-app messenger, video chat, and phone calls.
-              </li>
-            </ul>
-          </div>
-            <div class="fl w-100 w-50-l ph3">
-                <p class="f4 f3-ns lh-title mb0 b">
-                  Anchors are...
-                </p>
-                <ul class="lh-copy measure mv1">
+  <div class="measure f3 center mt5 mb3">
+      <h1 class="fw6 f4 f3-ns gray">What is a mixed notification model?</h1>
+        <p class="lh-copy measure f4 f3-ns">
+            Mixed model consist of a <span class="b blue">Source</span> and an <span class="b orange">Anchor</span>. One determines where the notification is coming from, while the other determines where it should be sent.
+      </div>   
+      
+      <div class="flex flex-wrap measure f3 center w-100">
+          <div class="fl w-100 w-50-l ph3">
+              <p class="f4 f3-ns lh-title mb0 b blue">
+                Sources
+              </p>
+              <ul class="lh-copy measure mv1">
+                  <li class="f5 f4-ns pv2"><span class="b">Profile</span> - Relating to the profile of a user. Change if bio, new followers/subscribers, etc..
+                  </li>
+                  <li class="f5 f4-ns pv2"><span class="b">Posts</span> - Relating to activity of a specific post. Comments, Likes, etc..
+                  </li>
+                  <li class="f5 f4-ns pv2"><span class="b">Events</span> - Relating to primary functional activity between a Supporter and Creator. New Uploads, new Subscriptions, etc..
+                    </li>
+                  <li class="f5 f4-ns pv2"><span class="b">Connect</span> - Relating to any activity of the in-app messenger, video chat, and phone calls.
+                  </li>
+                </ul>
+                </div>
+              <div class="fl w-100 w-50-l ph3">
+                  <p class="f4 f3-ns lh-title mb0 b orange">
+                    Anchors
+                  </p>
+                  <ul class="lh-copy measure mv1">
                     <li class="f5 f4-ns pv2"><span class="b">Messenger</span> - All related activity around our in-app messenger will be directed directly to its own anchor.
                     </li>
                     <li class="f5 f4-ns pv2"><span class="b">Notification Center</span> - This interface will house most notifications that is served to users. Each notification will be distinguishable by the type of source 
                     </li>
                   </ul>
-            </div>
-  </div>
+              </div>
+              <div class="measure f3 center">
+                  <img src="./images/collide/notifications/sourcenanchor.jpg" class="db w-100"/>
+              </div>
+      </div>
+      
+      
 
   <div class="measure f3 center mv5">
-      <h1 class="fw6 f4 f3-ns gray">Implementation</h1>
+    <h1 class="fw6 f4 f3-ns gray">Execution</h1>
       <p class="lh-copy measure f4 f3-ns">
-        There are two main things to focus on; creating the notifications and anchors, and getting user permission to subscribe to receive notifications.
+          Once the planning was finished, I began sketching out ideas until I felt comfortable with the final designs.
       </p>
-      <ul class="lh-copy measure v1">
-        <li class="f5 f4-ns pv2">
-            Implement a custom banner that asks users to enable notifications. They can either allow (which will prompt browser permission prompt) or dismiss it.
-        </li>
-        <li class="f5 f4-ns pv2">
-            Ask users to allow notifications when the benefits are most obvious to them. (i.e. when a supporter requests a video chat from a creator, serve a message that says "Would you like to be notified when your video chat is ready?").
-        </li>
-      </ul>
       <div class="cf mw8 center pv4">
           <a href="#img-collide-notifications1" class="fl w-33 overflow-hidden link ph1">
             <div role="img" class="grow aspect-ratio--5x8" style="background: url(./images/collide/notifications/Mobile-notification-center.jpg) no-repeat center center; background-size: cover;"></div>
@@ -178,18 +162,30 @@ title: Notifications - Case Study
             <img src="./images/collide/notifications/Banner_permission_prompt.jpg">
           </a>
         </div>
+    </div>
+
+
+  <div class="measure f3 center mv5">
+      <h1 class="fw6 f4 f3-ns gray">Implementation</h1>
+      <p class="lh-copy measure f4 f3-ns">
+        Once designs and documentation was completed, I created the proper tickets on Github and used Zeplin to handoff designs. I made sure each epic tickets had a proper user story, intent and goal measurement.
+      </p>
+      <div class="measure f3 center">
+          <img src="./images/collide/notifications/githubnzeplin.jpg" class="db w-100"/>
+      </div>
+      <p class="lh-copy measure f4 f3-ns">
+          I also worked with our product manager and copy writers to make sure every instance of notifications is accounted for.
+        </p>
+      <div class="measure f3 center">
+          <img src="./images/collide/notifications/notificationexamples.png" class="db w-100"/>
+      </div>
+      <p class="tc f7 ttu tracked fs-normal gray">Examples of notification that will be served</p>
   </div>
 
   <div class="measure f3 center mv5">
-    <h1 class="fw6 f4 f3-ns gray">Final thoughts</h1>
+    <h1 class="fw6 f4 f3-ns gray">Future plans</h1>
       <p class="lh-copy measure f4 f3-ns">
-        There are several things to be concerned about the solution we have picked. One would be users not allowing permission for Collide to send them notifications. Which will defeat the whole purpose of notifications. 
-      </p>
-      <p class="lh-copy measure f4 f3-ns">
-          Another problem is not implementing a way for users to manage their notifications. This is a temporary hold for now and will be implemented once resources are available.
-      </p>
-      <p class="lh-copy measure f4 f3-ns">
-        Overall, finally having a notifications will bring lots of positivities to Collide that will ultimately drive user success and engagement.
+          The first phase of our notification implementation will only consist of receiving and displaying notifications. I wanted to implement a notification management system, but unfortunately our team did not have the time and resources to do so at the moment.
       </p>
   </div>
 
